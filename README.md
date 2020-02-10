@@ -1,4 +1,7 @@
 # Bounz (Client)
+
+![Cover](cover.png)
+
 Bounz is a fun new way to share image-centric posts with an effectively unlimited amount of people. The basic premise is that once you post something, your followers will receive it whereafter they have the option of "bounzing" it to their followers through a fun gesture so that they too will receive it. This can theoretically continue until you have reached everyone on the platform (if your post is good enough...).
 
 Bounz is not meant to replace any of your current social apps but rather provides an entirely new and exciting experience whereby you can create and edit awesome pics (with our even more awesome editor) or help promote the awesome pics of others.
