@@ -1,0 +1,16 @@
+diff --git a/node_modules/age-calculator/index.d.ts b/node_modules/age-calculator/index.d.ts
+new file mode 100644
+index 0000000..f62c257
+--- /dev/null
++++ b/node_modules/age-calculator/index.d.ts
+@@ -0,0 +1,10 @@
++export declare class AgeFromDateString {
++    private _age;
++    constructor(dateString: string);
++    readonly age: number;
++}
++export declare class AgeFromDate {
++    private _age;
++    constructor(date: Date);
++    readonly age: number;
++}

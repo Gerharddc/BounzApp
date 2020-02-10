@@ -1,0 +1,21 @@
+diff --git a/node_modules/aws-appsync-react/lib/rehydrated-rn.js b/node_modules/aws-appsync-react/lib/rehydrated-rn.js
+index 0ea56ac..f3b5e2d 100644
+--- a/node_modules/aws-appsync-react/lib/rehydrated-rn.js
++++ b/node_modules/aws-appsync-react/lib/rehydrated-rn.js
+@@ -56,6 +56,7 @@ var React = require("react");
+ var react_native_1 = require("react-native");
+ var PropTypes = require("prop-types");
+ var aws_appsync_1 = require("aws-appsync");
++var netinfo_1 = require("@react-native-community/netinfo");
+ var Rehydrate = function (props) { return (React.createElement(react_native_1.View, { style: [styles.container, props.style || {}] }, props.rehydrated ? props.children : React.createElement(react_native_1.Text, null, "Loading..."))); };
+ var styles = react_native_1.StyleSheet.create({
+     container: {
+@@ -78,7 +79,7 @@ var Rehydrated = /** @class */ (function (_super) {
+                     case 0: return [4 /*yield*/, this.context.client.hydrated()];
+                     case 1:
+                         _a.sent();
+-                        return [4 /*yield*/, react_native_1.NetInfo.isConnected.fetch()];
++                        return [4 /*yield*/, netinfo_1.isConnected.fetch()];
+                     case 2:
+                         _a.sent();
+                         this.setState({

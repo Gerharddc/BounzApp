@@ -1,0 +1,34 @@
+diff --git a/node_modules/react-native-device-info/android/build.gradle b/node_modules/react-native-device-info/android/build.gradle
+index 81f0a0c..c5f2b8b 100644
+--- a/node_modules/react-native-device-info/android/build.gradle
++++ b/node_modules/react-native-device-info/android/build.gradle
+@@ -50,7 +50,7 @@ dependencies {
+     def mediaCompatVersion = safeExtGet('mediaCompatVersion', safeExtGet('supportLibVersion', '28.0.0'))
+ 
+     implementation "com.facebook.react:react-native:${safeExtGet('reactNativeVersion', '+')}"
+-    implementation "com.google.android.gms:play-services-gcm:${safeExtGet('googlePlayServicesVersion', '16.1.0')}"
++    //implementation "com.google.android.gms:play-services-gcm:${safeExtGet('googlePlayServicesVersion', '16.1.0')}"
+     implementation "$appCompatLibName:$supportLibVersion"
+     implementation "$supportV4LibName:$supportV4Version"
+     implementation "$mediaCompatLibName:$mediaCompatVersion"
+diff --git a/node_modules/react-native-device-info/android/src/main/java/com/learnium/RNDeviceInfo/RNDeviceModule.java b/node_modules/react-native-device-info/android/src/main/java/com/learnium/RNDeviceInfo/RNDeviceModule.java
+index f223240..07a7ed9 100644
+--- a/node_modules/react-native-device-info/android/src/main/java/com/learnium/RNDeviceInfo/RNDeviceModule.java
++++ b/node_modules/react-native-device-info/android/src/main/java/com/learnium/RNDeviceInfo/RNDeviceModule.java
+@@ -505,13 +505,14 @@ public class RNDeviceModule extends ReactContextBaseJavaModule {
+     }
+ 
+ 
+-    try {
++    /*try {
+       if (Class.forName("com.google.android.gms.iid.InstanceID") != null) {
+         constants.put("instanceId", com.google.android.gms.iid.InstanceID.getInstance(this.reactContext).getId());
+       }
+     } catch (ClassNotFoundException e) {
+       constants.put("instanceId", "N/A: Add com.google.android.gms:play-services-gcm to your project.");
+-    }
++    }*/
++    constants.put("instanceId", "N/A: Add com.google.android.gms:play-services-gcm to your project.");
+     constants.put("serialNumber", Build.SERIAL);
+     constants.put("deviceName", deviceName);
+     constants.put("systemName", "Android");

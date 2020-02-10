@@ -1,0 +1,13 @@
+{
+  "presets": ["module:metro-react-native-babel-preset", "@babel/typescript"],
+  "sourceMaps": "inline",
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "extensions": [".js", ".ts", ".tsx", ".ios.js", ".android.js"]
+      }
+    ]
+  ],
+}

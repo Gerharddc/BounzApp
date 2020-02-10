@@ -1,0 +1,23 @@
+{
+    "activitycontinuation": {
+        "apps": [
+            "7A8LV72Y89.io.bounz.bounzapp"
+        ]
+    },
+    "webcredentials": {
+        "apps": [
+            "7A8LV72Y89.io.bounz.bounzapp"
+        ]
+    },
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "7A8LV72Y89.io.bounz.bounzapp",
+                "paths": [
+                    "/links/*"
+                ]
+            }
+        ]
+    }
+}
